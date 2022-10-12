@@ -18,6 +18,11 @@ Mais um estudo em node, agora mais voltado para as questões de segurança de ap
 
 ## Project setup
 
+Instale os pacotes usando o comando abaixo:
+```
+npm install
+```
+
 Antes de rodar o sistema para testar, é necessario criar na raiz do projeto um arquivo chamado `.env`.
 Dentro deste arquivo você devera adicionar a `CHAVE_JWT` conformer descrito abaixo:
 
@@ -33,4 +38,7 @@ node -e "console.log(require('crypto').randomBytes(256).toString('base64'))"
 
 Copie a string gerada após a conclusão do comando e cole no lugar de "coloque-sua-chave-secreta-aqui".
 
-Pronto!
+Pronto, agora é só rodar!
+```
+npm start
+```
