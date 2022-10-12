@@ -3,7 +3,7 @@
 | :placard: API em NodeJS |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Node.js e JWT: autenticação com tokens**
-| :label: Tecnologias | NodeJSr
+| :label: Tecnologias | NodeJS
 
 Mais um estudo em node, agora mais voltado para as questões de segurança de aplicações.
 > Blog do código, um blog simples em Node.js
