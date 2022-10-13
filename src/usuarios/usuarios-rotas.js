@@ -11,6 +11,10 @@ module.exports = app => {
     );
 
   app
+    .route('/usuario/logout')
+    .get(middlewaresAuthenticacao.bearer, usuariosControlador.logout);
+
+  app
     .route('/usuario')
     .post(usuariosControlador.adiciona)
     .get(usuariosControlador.lista);
@@ -18,7 +22,7 @@ module.exports = app => {
   app
     .route('/usuario/:id')
     .delete(
-      middlewaresAuthenticacao.bearer, 
+      middlewaresAuthenticacao.bearer,
       usuariosControlador.deleta
     );
 };
