@@ -3,7 +3,7 @@
 | :placard: API em NodeJS |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Node.js e JWT: autenticação com tokens**
-| :label: Tecnologias | NodeJS
+| :label: Tecnologias | NodeJS, Redis
 
 Mais um estudo em node, agora mais voltado para as questões de segurança de aplicações.
 > Blog do código, um blog simples em Node.js
@@ -38,7 +38,12 @@ node -e "console.log(require('crypto').randomBytes(256).toString('base64'))"
 
 Copie a string gerada após a conclusão do comando e cole no lugar de "coloque-sua-chave-secreta-aqui".
 
-Pronto, agora é só rodar!
+### Redis
+
+Para criar a blacklist de tokens, foi utilizado o Redis para persistir essa informação, neste ponto deixo a seu critério se irá instalar ou rodar em uma imagem do docker.
+No meu caso usei o Docker.
+
+Pronto, feito isso, agora é só rodar!
 ```
 npm start
 ```
