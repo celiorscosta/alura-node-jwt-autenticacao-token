@@ -18,30 +18,30 @@ Mais um estudo em node, agora mais voltado para as questões de segurança de ap
 
 ## Project setup
 
-Instale os pacotes usando o comando abaixo:
+> Instale os pacotes usando o comando abaixo:
 ```
 npm install
 ```
 
-Antes de rodar o sistema para testar, é necessario criar na raiz do projeto um arquivo chamado `.env`.
-Dentro deste arquivo você devera adicionar a `CHAVE_JWT` conformer descrito abaixo:
+> Antes de rodar o sistema para testar, é necessario criar na raiz do projeto um arquivo chamado `.env`.
+> Dentro deste arquivo você devera adicionar a `CHAVE_JWT` conformer descrito abaixo:
 
 ```
 CHAVE_JWT="coloque-sua-chave-secreta-aqui"
 ```
 
-Para gerar a chave rode no seu terminal o comando:
+> Para gerar a chave rode no seu terminal o comando:
 
 ```
 node -e "console.log(require('crypto').randomBytes(256).toString('base64'))"
 ```
 
-Copie a string gerada após a conclusão do comando e cole no lugar de "coloque-sua-chave-secreta-aqui".
+> Copie a string gerada após a conclusão do comando e cole no lugar de "coloque-sua-chave-secreta-aqui".
 
 ### Redis
 
-Para criar a blacklist de tokens, foi utilizado o Redis para persistir essa informação, neste ponto deixo a seu critério se irá instalar ou rodar em uma imagem do docker.
-No meu caso usei o Docker.
+> Para criar a blacklist de tokens, foi utilizado o Redis para persistir essa informação, neste ponto deixo a seu critério se irá instalar ou rodar em uma imagem do docker.
+> No meu caso usei o Docker e rodei tudo dentro do WSL2.
 
 Pronto, feito isso, agora é só rodar!
 ```
